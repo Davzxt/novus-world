@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Novus World</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-page">
+
+  <div class="login-container">
+    <!-- Logo -->
+    <img src="assets/images/logo.png" class="logo" alt="Novus World">
+
+    <!-- Card -->
+    <div class="login-card">
+      <h2>Cadastre-se e aproveite!</h2>
+
+      <label>Nome de usuário</label>
+      <input type="text" id="username" placeholder="Seu nome">
+
+      <label>Senha</label>
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Senha">
+        <span id="togglePassword">👁</span>
+      </div>
+
+      <label>Data de nascimento</label>
+      <input type="text" id="birth" placeholder="DD/MM/AAAA" maxlength="10">
+
+
+      <label>Gênero</label>
+      <div class="gender-box">
+        <img src="assets/images/homem.png" class="gender male" onclick="selectGender('male', this)">
+        <img src="assets/images/mulher.png" class="gender female" onclick="selectGender('female', this)">
+      </div>
+
+      <button onclick="login()">Entrar</button>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

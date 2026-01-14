@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Novus Worlds</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- MENU LATERAL -->
+<div id="sidebar" class="sidebar">
+  <a href="#" onclick="closeSidebar()">Home</a>
+  <a href="#" onclick="OpenProfile()">Profile</a>
+  <a href="#" onclick="openAvatar()">Avatar</a>
+  <a href="#">Catalog</a>
+  <hr>
+  <a href="#" class="maker">Abrir Maker</a>
+</div>
+
+<!-- TOPO -->
+<header class="topbar">
+  <img src="assets/icons/n_icon.png" class="logo" id="logo">
+
+  <input type="text" class="search" placeholder="Pesquisar jogadores ou jogos">
+
+  <div class="user">
+    <div class="avatar"></div>
+    <div>
+      <div id="greeting"></div>
+      <div id="username"></div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTEÚDO -->
+<main class="content">
+
+  <!-- AMIGOS -->
+  <section class="section large">
+    <h2 id="friendsTitle">Amigos (0)</h2>
+    <div id="friendsRow" class="friends-row"></div>
+    <p id="noFriends" class="empty">Você ainda não adicionou amigos</p>
+  </section>
+
+  <!-- JOGADOS RECENTEMENTE -->
+  <section class="section large">
+    <h2>Jogados recentemente</h2>
+
+    <div class="game-row">
+      <div class="game-card" onclick="openGame()">
+        <img src="assets/images/thumbnail.png">
+        <span>Baseplate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCOBRIR -->
+  <section class="section large">
+    <h2>Descobrir</h2>
+
+    <div class="game-row">
+      <div class="game-card" onclick="openGame()">
+        <img src="assets/images/thumbnail.png">
+        <span>Baseplate</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/home.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

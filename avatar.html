@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Avatar Editor - Novus Worlds</title>
+  <link rel="stylesheet" href="css/avatar.css">
+
+  <!-- THREE.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/icons/n_icon.png" class="logo" onclick="goProfile()">
+  <h2>Editor de Avatar</h2>
+</header>
+
+<main class="editor">
+
+  <!-- VIEWPORT 3D -->
+  <div id="viewport"></div>
+
+  <!-- PAINEL -->
+  <div class="panel">
+    <h3>Personalização</h3>
+
+    <button onclick="setSkin('#f1c27d')">Pele clara</button>
+    <button onclick="setSkin('#c68642')">Pele escura</button>
+
+    <hr>
+
+    <p>(Roupas e acessórios depois)</p>
+  </div>
+
+</main>
+
+<script src="js/avatar.js"></script>
+</body>
+</html>
