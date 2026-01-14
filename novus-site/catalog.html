@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Novus World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-screen">
+  <img src="assets/logo.png" class="logo">
+
+  <h1>Cadastre-se e aproveite!</h1>
+
+  <input type="text" placeholder="Nome de usuário">
+
+  <div class="password-box">
+    <input type="password" id="senha" placeholder="Senha">
+    <span onclick="toggleSenha()">👁</span>
+  </div>
+
+  <input type="text" placeholder="Data de nascimento (**/**/****)">
+
+  <div class="gender">
+    <img src="assets/homem.png">
+    <img src="assets/mulher.png">
+  </div>
+
+  <button onclick="entrar()">Entrar</button>
+</div>
+
+<div id="loading-screen" class="hidden">
+  <img src="assets/n_icon.png" id="loading-n">
+  <p id="loading-text">Carregando.</p>
+</div>
+
+<div id="menu" class="hidden">
+  <div class="top">
+    <div class="avatar"></div>
+    <div>
+      <p id="saudacao"></p>
+      <strong id="usuario">Player</strong>
+    </div>
+  </div>
+
+  <h2>Jogos recentes:</h2>
+
+  <div class="game-card">
+    <img src="assets/fundo.jpg">
+    <button onclick="abrirJogo()">Mais</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

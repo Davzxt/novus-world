@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Novus World Maker</title>
+  <link rel="stylesheet" href="maker.css">
+</head>
+<body>
+
+<div id="maker">
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <button>▶ Play</button>
+    <button>■ Stop</button>
+    <button>💾 Salvar</button>
+    <button>⬆ Publicar</button>
+    <select id="layoutSelect">
+      <option>Layout Clássico</option>
+      <option>Layout Compacto</option>
+    </select>
+  </div>
+
+  <!-- MAIN -->
+  <div id="main">
+
+    <!-- EXPLORER -->
+    <div id="explorer" class="panel">
+      <h3>Explorer</h3>
+      <ul>
+        <li>Workspace
+          <ul>
+            <li>Baseplate</li>
+            <li>Checkpoint</li>
+          </ul>
+        </li>
+        <li>Player</li>
+      </ul>
+    </div>
+
+    <div class="resizer"></div>
+
+    <!-- VIEWPORT -->
+    <div id="viewport" class="panel">
+      <canvas id="viewport3d"></canvas>
+    </div>
+
+    <div class="resizer"></div>
+
+    <!-- PROPERTIES -->
+    <div id="properties" class="panel">
+      <h3>Properties</h3>
+      <label>Name</label>
+      <input value="Baseplate">
+      <label>Position</label>
+      <input value="0, 0, 0">
+      <label>Size</label>
+      <input value="100, 1, 100">
+      <label>Anchored</label>
+      <input type="checkbox" checked>
+      <label>CanCollide</label>
+      <input type="checkbox" checked>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div id="bottom">
+    <div id="tools">
+      <button>🡕 Mover</button>
+      <button>⟳ Girar</button>
+      <button>⬚ Escalar</button>
+      <button>⬛ Parte</button>
+      <button>⚪ Esfera</button>
+    </div>
+
+    <div id="scripts">
+      <h3>Output</h3>
+      <pre>> Novus World Maker iniciado...</pre>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="viewport.js"></script>
+<script src="resize.js"></script>
+
+</body>
+</html>
